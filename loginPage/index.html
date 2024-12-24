@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillForge - logIn </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="container">
+    <!-- Card -->
+    <div class="card">
+      <!-- Front: Login Form -->
+      <div class="card-front">
+        <div class="login-box">
+          <form action="" id="loginForm">
+            <h2>Login</h2>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" required />
+              <label>Password</label>
+            </div>
+    
+            <div class="remember-forget">
+              <label><input type="checkbox" />Remember me</label>
+              <a href="#">Forget Password</a>
+            </div>
+    
+            <button type="submit">Login</button>
+            <div class="register-link">
+              <p>Don't have an account? <a href="#" id="to-signup">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <!-- Back: Signup Form -->
+      <div class="card-back">
+        <div class="signup-box">
+          <form action=""  id="signupForm">
+            
+            <h2>Sign Up</h2>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" required />
+              <label>Full Name</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="call"></ion-icon></span>
+              <input type="tel" pattern="[0-9]{10}" required />
+              <label>Phone Number</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" minlength="8" required />
+              <label>Password</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" minlength="8" required />
+              <label>Confirm Password</label>
+            </div>
+            <div class="gender-box">
+              <label>Gender:</label>
+              <label><input type="radio" name="gender" value="male" required /> Male</label>
+              <label><input type="radio" name="gender" value="female" required /> Female</label>
+              <label><input type="radio" name="gender" value="other" required /> Other</label>
+            </div>
+            <div class="terms-box">
+              <label>
+                <input type="checkbox" required />
+                I agree to the <a href="#">Terms and Conditions</a>
+              </label>
+            </div>
+            <button type="submit">Sign Up</button>
+            <div class="login-link">
+              <p>Already have an account? <a href="#" id="to-login">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+<script src="script.js"></script>
+</html>
